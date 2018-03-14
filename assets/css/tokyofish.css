@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+}
+
+.alert {
+    color: #e74c3c;
+}
+
+#today-title {
+    -webkit-transition: all 5s;
+    -moz-transition: all 5s;
+    -ms-transition: all 5s;
+    -o-transition: all 5s;
+    transition: all 5s;
+}
+
+.fadeOut {
+    opacity: 0;
+}
+
+.business-model-canvas tr th {
+    font-size: 120% !important;
+}
+
+.business-model-canvas {
+    font-size: 40% !important;
+}
+
+.today-animation {
+    position: absolute;
+    top: -7em !important;
+}
+
+.today-animation img {
+    border: none !important;
+    margin: 0 !important;
+    background: none !important;
+    box-shadow: none !important;
+}

@@ -1,1 +1,249 @@
-Hello Open Data Challenge
+<html lang="ja">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="assets/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="assets/reveal.js/css/theme/sky.css">
+    <link rel="stylesheet" href="assets/css/tokyofish.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <section>
+                    <h3>満員電車をイノベーションの場に</h3>
+                    <h4>Let's enjoy commuting!</h4>
+                </section>
+                <section>
+                    <h3>[背景 1/2] 首都圏の平均通勤時間</h3>
+                    <p class="fragment">半分の会社員が片道 60 分
+                        <small>参照
+                            <a target="_blank" href="https://honote.macromill.com/report/20161011/">https://honote.macromill.com/report/20161011/</a>
+                        </small>
+                    </p>
+                    <p class="fragment">首都圏の中位数で片道 43 ~ 48 分
+                        <small>参照
+                            <a target="_blank" href="http://www.stat.go.jp/data/jyutaku/2013/pdf/nihon04-3.pdf">http://www.stat.go.jp/data/jyutaku/2013/pdf/nihon04-3.pdf</a>
+                        </small>
+                    </p>
+                    <h3 class="fragment">毎日、往復 100 ~ 120 分を通勤に費やしている</h3>
+                </section>
+                <section>
+                    <h3>[背景 2/2] 会社員の 1 日</h3>
+                    <span class="fragment">仕事 9 時間</span>
+                    <span class="fragment">+ 睡眠 7 時間</span>
+                    <span class="fragment">+ 食事・サニタリー 3 時間</span>
+                    <span class="fragment">+ その他、家の用事・TV など 2 時間</span>
+                    <p class="fragment">24 - 9 - 7 - 3 - 2 = 3 時間</p>
+                    <h3 class="fragment">1 日のフリーな 3 時間のうち 2 時間、
+                        <br/>割合にすると 75% を使用して通勤している</h3>
+                </section>
+                <section>
+                    <h3>[提案] 今の生活を変えずにクリエイティブな時間を再発掘する</h3>
+                    <h4>Let's enjoy commuting!</h4>
+                </section>
+                <section data-state="today">
+                    <div class="today-animation">
+                        <span id="today-train"></span>
+                        <span id="today-person"></span>
+                    </div>
+                    <h3>
+                        <span id="today-title">[現状] 埼京線・武蔵浦和の半日</span>
+                    </h3>
+                    <span style="z-index: 100; position: relative;">時刻
+                        <span id="today-time">5:00</span>
+                        <p>
+                            <small>※定期を利用する人のみの乗客数で 1 車両 540 席での混雑割合を算出</small>
+                        </p>
+                    </span>
+                </section>
+                <section>
+                    <h3>[再発掘] Anytime your space is reserved</h3>
+                    <small>12 時までの武蔵浦和から出発する混雑割合をすべて加算 = 9069%</small>
+                    <small>12 時までの武蔵浦和から出発する総本数 = 86</small>
+                    <small>1 車両あたりの平均混雑割合 = 9069 / 86 = 105.5</small>
+                    <h3 class="fragment">12 時までにタイムシフト通勤すると 100/105.5 = 94.8% の人が座って通勤できる</h3>
+                </section>
+                <section>
+                    <h3>[メリット] Anytime your space is reserved</h3>
+                    <ul>
+                        <li>利用者
+                            <ul>
+                                <li>着席することでストレスが減る</li>
+                                <li>通勤時間を仕事にあてられるため、自然と働き方改革が促進される</li>
+                                <li>趣味や自分の時間を作ることができる</li>
+                            </ul>
+                        </li>
+                        <li>鉄道・バス各社
+                            <ul>
+                                <li>混雑による運行を妨げる要因が低減される</li>
+                                <li>車両の空いたスペースを有効活用できる</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>ビジネスモデル</h3>
+                    <small>
+                        <table class="business-model-canvas">
+                            <tr>
+                                <th>KP (キーパートナー)</th>
+                                <th>KA (キーアクティビティ)</th>
+                                <th colspan="2">VP (提供価値)</th>
+                                <th>CR (顧客との関係)</th>
+                                <th>CS (顧客セグメント)</th>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">
+                                    <ul>
+                                        <li>各鉄道会社</li>
+                                        <li>各バス会社</li>
+                                        <li>通信キャリア</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>車両内での告知を含むマーケティング</li>
+                                        <li>シフトタイムエコノミーの啓蒙活動</li>
+                                        <li>アプリ開発</li>
+                                        <li>WiFi・電源機材の設置</li>
+                                    </ul>
+                                </td>
+                                <td rowspan="3" colspan="2">
+                                    <ul>
+                                        <li>利用者
+                                            <ul>
+                                                <li>電車・バスで座れる</li>
+                                                <li>電車・バスで高速無線通信ができる</li>
+                                                <li>電車・バスでスマホや PC の (急速) 充電ができる</li>
+                                                <li>電車・バスの混雑状況や座れる時間帯がわかる (ファストパスの発行ができる)</li>
+                                                <li>座れば座るほどマイルが付与され、休日の旅行などに利用できる</li>
+                                            </ul>
+                                        </li>
+                                        <li>鉄道・バス各社
+                                            <ul>
+                                                <li>運行を妨げる要因に費やしていたコストの削減</li>
+                                                <li>マイル発行により電車・バスでの移動が促進され、観光収入等の増加が見込める</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>混雑がなくなることでの運行遅延解消</li>
+                                        <li>マイルの付与</li>
+                                    </ul>
+                                </td>
+                                <td rowspan="3">
+                                    <ul>
+                                        <li>利用者
+                                            <ul>
+                                                <li>鉄道・バスで通勤している会社員</li>
+                                                <li>満員電車・バスに乗っていて、ストレスを感じている</li>
+                                            </ul>
+                                        </li>
+                                        <li>鉄道・バス各社
+                                            <ul>
+                                                <li>混雑による駆け込みや運行を妨げる要因を低減したい鉄道・バス各社</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>KR (キーリソース)</th>
+                                <th>CH (チャネル)</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>アプリ・サーバ</li>
+                                        <li>WiFi・機材の調達</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>きっぷ・定期券購入時の自動券売機、または窓口</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colspan="3">CS (コスト構造)</th>
+                                <th colspan="3">RS (収益の流れ)</th>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <ul>
+                                        <li>アプリ開発 (ファストパス発券、座席空き状況、マイル)</li>
+                                        <li>車両への WiFi ネットワーク費用、電源タップ設置費用</li>
+                                    </ul>
+                                </td>
+                                <td colspan="3">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <ul>
+                                                    <li style="float: left">バス、電車内でのサービス利用代金
+                                                        <br/> WiFi 無料 (接続時間にリミットを設け、15 分等に一度ブラウザで再接続するときに広告を表示する = 鉄道・バスが SSP
+                                                        として機能する)
+                                                        <br/> 電源 ¥100/60 分
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul>
+                                                    <li style="float: left">車両の空いたスペースをイベントスペースとして利用する代金
+                                                        <br/> スペース ¥10000/60 分
+                                                        <br/> 個人間送金の手数料 1%
+                                                        <br/> 例) 車内販売 (物販/ソフトウェアなど)、勉強会などのコミュニティ活動
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </small>
+                </section>
+                <section>
+                    <h3>使用したオープンデータの課題と対応</h3>
+                    <ul>
+                        <li>課題
+                            <ul>
+                                <li>駅または車両の時刻表単位の乗降客数が分からない</li>
+                                <li>複数の路線が乗り入れる駅の乗降客数がわからない</li>
+                            </ul>
+                        </li>
+                        <li>対応
+                            <ul>
+                                <li>WiFi + Origin Wireless などで車両内、および駅構内の乗客の位置を測位することで人の流れを把握する</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>End</h3>
+                </section>
+            </section>
+        </div>
+    </div>
+    <script src="assets/reveal.js/js/reveal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="assets/js/tokyofish.js"></script>
+    <script>
+        Reveal.initialize();
+        Reveal.configure({
+            keyboard: {
+                13: 'next', // go to the next slide when the ENTER key is pressed
+            }
+        });
+        Reveal.addEventListener('today', function () {
+            setTimeout(countUpTimer, 1000, 'today-time');
+        }, false);
+    </script>
+</body>
+
+</html>
